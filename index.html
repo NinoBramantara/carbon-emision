@@ -16,6 +16,9 @@
     <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
     <!--================================ ANIMATE.CSS ================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--=============================== SCROLL ANIMATION ===========================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <section class="section_1">
@@ -29,94 +32,408 @@
                             <nav class="navigation">
                                 <i class="fa fa-times" onclick="navExit()"></i>
                                 <ul>
-                                    <a href="index.html" class="home"><li>Home</li></a>
-                                    <a href=#about class="Tentang"><li>Tentang</li></a>
-                                    <a href=#portofolio class="Portofolio"><li>Portofolio</li></a>
-                                    <a href="https://www.instagram.com/ninobramantara/"><li class="contact2">Button</li></a>
+                                    <!-- <a href="index.html" class="home"><li>Home</li></a> -->
+                                    <a href=#definisi class="Definisi"><li>Definisi</li></a>
+                                    <a href=#media-sosial class="Media Sosial"><li>Media Sosial</li></a>
+                                    <a href=#email class="Email"><li>E-Mail</li></a>
+                                    <a href=#listrik class="listrik"><li>Konsumsi Listrik</li></a>
+                                    <a href=#pengelolaan class="Pengelolaan"><li>Pengelolaan</li></a>
+                                    <a href="help-form/index.html" target="_blank"><li class="contact2">Bantuan</li></a>
                                 </ul>
                             </nav>
                         </div>
-                        <a href="https://www.instagram.com/ninobramantara/" class="button_link"><button>Button</button></a>
+                        <a href="help-form/index.html" class="button_link" target="_blank"><button>Bantuan</button></a>
                     </div>
                     <div class="content">
-                        <div class="photo">
-
-                        </div>
+                        <div class="photo"></div>
                         <div class="text">
-                            <h4 class="animate__slideInLeft">Pengelolaan Konsumsi Listrik dan Jejak Karbon Digital<br>Guna Mengurangi Emisi Karbon</h4>
-                            <p class="animate__fadeIn">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi et aliquam, esse quae atque dolorum vel eos qui libero est deleniti vitae ab. Nulla mollitia nesciunt, culpa quo ut perspiciatis!<br> <span> Emisi Karbon</span></p>
-                            <a href="https://docs.google.com/document/d/1BJNFB09vGA9aOdJXf3Y0FmkOl3mK1k7j/edit?usp=sharing&ouid=117959821753829971578&rtpof=true&sd=true" target="_blank" class="cv_button animate__fadeIn"><button><span>
-                            </span>Button</button></a>
+                            <h4 class="animate__slideInLeft">Pengelolaan <br class="phone"> Konsumsi <br class="desktop">Listrik <br class="phone"> dan Jejak Karbon <br class="phone">Digital <br class="desktop"> Guna Mengurangi <span class="animate__fadeIn"> Emisi Karbon</span></h4>
+                            <a href="#" target="_blank" class="cv_button animate__fadeIn"><button><span>
+                            </span>Download Jurnal</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section_3" id="about">
-        <div class="main">
-            <div class="container">
-                <div class="content">
-                    <div class="tittle">
-                        <h1>Information</h1>
-                    </div>
-                    <div class="profile">
-                        <div class="profile__picture">
-                            <img src="media/image/foto profil/1661177017142.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text">
-                        <p><span class="information">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio totam quibusdam sit facere et aliquid repudiandae suscipit veritatis architecto placeat, voluptatibus nobis nam, soluta ipsam quos? Ducimus dolores deleniti ad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_2" id="portofolio">
+    
+    <section class="section_2" id="definisi">
         <div class="main">
             <div class="container">
                 <div class="content">
                     <div class="title">
-                        <h1>Information (Image)</h1>
+                        <h1 data-aos="fade-up-right">Definisi</h1>
                     </div>
-                    <div class="poster_container">
-                        <h2>Poster</h2>
-                        <div class="poster_wrap">
-                            <div class="poster poster_1">
-                                <img src="media/image/poster/Poster_Endrino Surya Bramantara_IXA.jpg" alt="Poster 1">
+                    <div class="content-container">
+                        <div class="isi emisi_container" data-aos="fade-up">
+                            <div class="icon-anchor">
+                                <div class="icon emisi">
+                                    <img src="media/icon/carbon-footprint-industry-ecology-environment-carbon-dioxide-conservation-carbon-label-pngrepo-com.png" alt="jejak karbon">
+                                </div>
                             </div>
-                            <div class="poster poster_1">
-                                <img src="media/image/poster/Prinsip Kedaulatan.jpg" alt="Poster 2">
+                            <h2>Emisi Karbon</h2>
+                            <p><strong>Emisi karbon</strong> adalah pelepasan gas-gas yang mengandung karbon ke lapisan atmosfer. Sebagian besar didominasi oleh gas karbon dioksida (<span>Carbon dioxide</span>).</p>
+                        </div>
+                        <div class="isi jejak_container" data-aos="fade-up"> 
+                            <div class="icon-anchor">                               
+                                <div class="icon jejak">
+                                    <img src="media/icon/foot-print.png" alt="jejak karbon">
+                                </div>
                             </div>
-                            <div class="poster poster_1">
-                                <img src="media/image/poster/poster-disabilitas.jpg" alt="Poster 3">
+                            <h2>Jejak Karbon Digital</h2>
+                            <p><strong>Jejak karbon digital</strong> adalah jumlah karbon yang dihasilkan dari berbagai aktivitas manusia dalam penggunaan internet pada kurun waktu tertentu yang berasal dari proses manufaktur dan pengiriman perangkat elektronik.</p>
+                        </div>
+                        <div class="isi gawai_container" data-aos="fade-up">
+                            <div class="icon-anchor">                               
+                                <div class="icon gawai">
+                                    <img src="media/icon/smartphone.png" alt="jejak karbon">
+                                </div>
                             </div>
+                            <h2>Gawai</h2>
+                            <p><strong>Gadget</strong> atau <strong>gawai</strong> adalah suatu perangkat alat canggih di dalamnya terdapat aplikasi. Dalam gadget terdapat berbagai aplikasi untuk sumber informasi, jejaring sosial, hobi, kreatifitas, dan masih banyak lagi.</p>
                         </div>
                     </div>
-                    <div class="foto_container">
-                        <h2>Foto</h2>
-                        <div class="foto_wrap">
-                            <div class="foto foto_1"></div>
-                                <table>
-                                    <tr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_3">
+        <div class="main">
+            <div class="container">
+                <div class="content">
+                    <div class="title">
+                        <h1 data-aos="fade-down-right">Jejak Karbon Digital</h1>
+                    </div>
+                   <div class="sosial-media">
+                        <h2 class="media-sosial" id="media-sosial" data-aos="zoom-in-down">Media Sosial</h2>
+                        <div class="table">
+                            <table>
+                                <tbody>
+                                    <tr data-aos="fade-right">
                                         <td>
-                                            <img src="media/image/foto/1661169546225.jpg" alt="">
+                                            <div class="images tiktok-image">
+                                                <img src="media/icon/Sosial Media/tik-tok.png" alt="tiktok">
+                                            </div>
+                                        </td>
+                                        <td class="table-data-cell">
+                                            <div class="table-data">
+                                                <h3>TikTok menghasilkan 300g CO2-eq/jam</h3>
+                                            </div>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr data-aos="fade-left">
+                                        <td class="table-data-cell">
+                                            <div class="table-data left">
+                                                <h3>Youtube menghasilkan 300g CO2-eq/jam</h3>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <p>Juara 2 Qursa</p>
+                                            <div class="images youtube-image">
+                                                <img src="media/icon/Sosial Media/youtube (1).png" alt="Youtube">
+                                            </div>
                                         </td>
                                     </tr>
-                                </table>
-                            <div class="foto foto_2">
-                                <img src="media/image/foto/1661169546213.jpg" alt="">
-                            </div>
-                            <div class="foto foto_3">
-                                <img src="media/image/foto/1661169546187.jpg" alt="">
+                                    <tr data-aos="fade-right">
+                                        <td>
+                                            <div class="images facebook-image">
+                                                <img src="media/icon/Sosial Media/facebook.png" alt="Facebook">
+                                            </div>
+                                        </td>
+                                        <td class="table-data-cell">
+                                            <div class="table-data">
+                                                <h3>Facebook menghasilkan 300g CO2-eq/jam</h3>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-aos="fade-left">
+                                        <td class="table-data-cell left">
+                                            <div class="table-data">
+                                                <h3>Netflix menghasilkan 300g CO2-eq/jam</h3>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images netflix-image">
+                                                <img src="media/icon/Sosial Media/netflix (1).png" alt="Netflix">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-aos="fade-right">
+                                        <td>
+                                            <div class="images instagram-image">
+                                                <img src="media/icon/Sosial Media/instagram.png" alt="Instagram">
+                                            </div>
+                                        </td>
+                                        <td class="table-data-cell">
+                                            <div class="table-data">
+                                                <h3>Netflix menghasilkan 300g CO2-eq/jam</h3>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h2 class="e-mail" id="email" data-aos="fade-down-right">Surat Elektronik (e-mail)</h2>
+                        <div class="table">
+                            <table>
+                                <tbody>
+                                    <tr data-aos="fade-left">
+                                        <td class="table-data-cell">
+                                            <div class="table-data left">
+                                                <h3>Sebuah email spam menghasilkan 0.3g CO2-eq</h3>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images email-spam-image">
+                                                <img src="media/icon/Sosial Media/spam (1).png" alt="Spam">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-aos="fade-right">
+                                        <td>
+                                            <div class="images email-regular-image">
+                                                <img src="media/icon/Sosial Media/open-email.png" alt="E-Mail Reguler">
+                                            </div>
+                                        </td>
+                                        <td class="table-data-cell">
+                                            <div class="table-data">
+                                                <h3>Sebuah email reguler menghasilkan 4g CO2-eq</h3>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-aos="fade-left">
+                                        <td class="table-data-cell left">
+                                            <div class="table-data">
+                                                <h3>Email yang berisi 1 foto menghasilkan 50g CO2-eq</h3>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images email-photo-image">
+                                                <img src="media/icon/Sosial Media/photo (2).png" alt="E-Mail Reguler + Foto">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h2 class="listrik e-mail" id="listrik" data-aos="fade-down-right">Konsumsi Listrik</h2>
+                        <div class="table">
+                            <table>
+                                <tbody>
+                                    <tr data-aos="fade-right">
+                                        <td>
+                                            <div class="images listrik-image">
+                                                <img src="media/icon/Energy/electrical-panel.png" alt="Listrik">
+                                            </div>
+                                        </td>
+                                        <td class="table-data-cell">
+                                            <div class="table-data">
+                                                <h3>Setiap kWh listrik menghasilkan 0.773g CO2-eq/kWh</h3>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_4">
+        <div class="main">
+            <div class="container">
+                <div class="content">
+                    <div class="title">
+                        <h1 id="pengelolaan" data-aos="fade-down-right">Upaya Pengelolaan</h1>
+                    </div>
+                    <div class="content-container desktop" id="desktop">
+                        <div class="table cara1">
+                            <table>
+                                <tr data-aos="fade-down" data-aos-anchor-placement="bottom-center">
+                                    <td>
+                                        <div class="table-content isi1">
+                                            <h2>Download</h2>
+                                            <p>Pililah metode download daripada streaming, karena streaming menyebabkan kinerja server menjadi lebih berat.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-right" data-aos-offset="400">
+                                    <td>
+                                        <div class="table-content isi2">
+                                            <h2>Kurangi Penggunaan Sosial Media</h2>
+                                            <p>Dengan mengurangi lama penggunaan, maka emisi yang dihasilkan akan semakin sedikit.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-up">
+                                    <td>
+                                        <div class="table-content isi3">
+                                            <h2>Kosongkan Kotak Email</h2>
+                                            <p>Mengosongkan kotak email bisa mengurangi beban penyimpanan pusat data.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pengendalian" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
+                            <div class="pengendalian-image">
+                                <img src="media/icon/Energy/planet-earth.png" alt="">
                             </div>
                         </div>
-                        <p class="mobile_alert">untuk lebih jelasnya ada <a href="https://drive.google.com/drive/folders/1N9ZWsmxdlOo4ayBVo1DtC1EQ_5YqzuZI?usp=sharing" target="_blank" >disini</a></p>
+                        <div class="table cara2">
+                            <table>
+                                <tr data-aos="fade-down"
+                                data-aos-anchor-placement="bottom-center">
+                                    <td>
+                                        <div class="table-content isi4">
+                                            <h2>Gunakan Penyimpanan Lokal</h2>
+                                            <p>Simpanl data pada penyimpanan lokal, gunakan cloud sesedikit mungkin karena semakin besar beban panyimpanan semakin banyak emisi</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/smartphone.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-left" data-aos-offset="400">
+                                    <td>
+                                        <div class="table-content isi5">
+                                            <h2>Hemat Energi</h2>
+                                            <p>Dengan menghemat pemakaian energi, semakin sedikit emisi yang dihasilkan dari pengadaan energi tersebut.</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/Sosial Media/save-energy.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-up">
+                                    <td>
+                                        <div class="table-content isi6">
+                                            <h2>Gunakan Energi Terbarukan</h2>
+                                            <p>Energi terbarukan tidak akan pernah habis dan yang paling penting tidak menghasilkan emisi karbon.</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/Sosial Media/solar-panel (1).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="content-container phone" id="phone">
+                        <div class="table cara1">
+                            <table>
+                                <tr data-aos="fade-down-right" data-aos-anchor-placement="top-center">
+                                    <td>
+                                        <div class="table-content isi1">
+                                            <h2>Download</h2>
+                                            <p>Pililah metode download daripada streaming, karena streaming menyebabkan kinerja server menjadi lebih berat.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-right" data-aos-offset="400">
+                                    <td>
+                                        <div class="table-content isi2">
+                                            <h2>Kurangi Penggunaan Sosial Media</h2>
+                                            <p>Dengan mengurangi lama penggunaan, maka emisi yang dihasilkan akan semakin sedikit.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-up-right">
+                                    <td>
+                                        <div class="table-content isi3">
+                                            <h2>Kosongkan Kotak Email</h2>
+                                            <p>Mengosongkan kotak email bisa mengurangi beban penyimpanan pusat data.</p>
+                                            <div class="images-anchor-left">
+                                                <div class="images">
+                                                    <img src="media/icon/" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pengendalian" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
+                            <div class="pengendalian-image">
+                                <img src="media/icon/Energy/planet-earth.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table cara2">
+                            <table>
+                                <tr data-aos="fade-down-left"
+                                data-aos-anchor-placement="top-center">
+                                    <td>
+                                        <div class="table-content isi4">
+                                            <h2>Gunakan Penyimpanan Lokal</h2>
+                                            <p>Simpanl data pada penyimpanan lokal, gunakan cloud sesedikit mungkin karena semakin besar beban panyimpanan semakin banyak emisi</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/smartphone.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-left" data-aos-offset="400">
+                                    <td>
+                                        <div class="table-content isi5">
+                                            <h2>Hemat Energi</h2>
+                                            <p>Dengan menghemat pemakaian energi, semakin sedikit emisi yang dihasilkan dari pengadaan energi tersebut.</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/Sosial Media/save-energy.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-aos="fade-up-left">
+                                    <td>
+                                        <div class="table-content isi6">
+                                            <h2>Gunakan Energi Terbarukan</h2>
+                                            <p>Energi terbarukan tidak akan pernah habis dan yang paling penting tidak menghasilkan emisi karbon.</p>
+                                            <div class="images-anchor-right">
+                                                <div class="images">
+                                                    <img src="media/icon/Sosial Media/solar-panel (1).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,14 +458,16 @@
             
             <div class="col2">
                 <h3>Usefull Links</h3>
-                <a href=#about>Tentang</a>
-                <a href=#portofolio>Portofolio</a>
-                <a href="https://www.instagram.com/ninobramantara/">Contact</a>
+                <a href="help-form/index.html" target="_blank">Bantuan</a>
+                <a href=#definisi>Definisi</a>
+                <a href=#media-sosial>Media Sosial</a>
+                <a href=#pengelolaan>Pengelolaan</a>
             </div>
         </div>
     </section>
      <!--========================= JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
     <script>
+        AOS.init();
         navLinks = document.getElementById('navLinks');
         function navExit(){
             navLinks.style.right = '-200px';
@@ -156,6 +475,7 @@
         function navMenu(){
             navLinks.style.right = 0;
         }
+        
     </script>
 </body>
 </html>

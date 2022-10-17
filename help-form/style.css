@@ -29,6 +29,182 @@ time, mark, audio, video {
     --font-semi-bold: 600;
     --font-bold: 700;
 }
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #05210c;
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100%;
+    color: black;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section_1{
+    width: 100%;
+    min-height: 100vh;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.40)), url(../media/BackgroundPohon.jpg); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form{
+    height: 30rem;
+    width: 26rem;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+}
+h1{
+    font-size: 30px;
+    font-weight: var(--font-semi-bold);
+}
+h2{
+    margin-bottom: 10px;
+}
+form{
+    display: flexbox;
+    align-items: center;
+}
+form input,  form textarea{
+    width: 95%;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: 0;
+    margin-right: 10px;
+    resize: none;
+}
+input, textarea, button{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+form button{
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    outline: none;
+    border: 0;
+    background-color: #3a933a;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    transition: 1s;
+}
+form button:hover{
+    width: 100%;
+}
+form button:active{
+    background-color:#2a6b2a;
+}
+
+@media(max-width: 700px){
+    html {
+        font-family: 'Poppins', sans-serif;
+        background-color: #05210c;
+        box-sizing: border-box;
+        min-height: 100vh;
+        width: 100%;
+        color: black;
+        font-size: 16px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        font-size: 12px;
+    }
+    .section_1{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.40)), url(../media/BackgroundPohon.jpg); 
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .form{
+        height: auto;
+        width: 20rem;
+        border-radius: 10px;
+        background-color: white;
+        padding: 2rem;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: var(--font-semi-bold);
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    form{
+        align-items: center;
+    }
+    form input,  form textarea{
+        width: 95%;
+        color: black;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        outline: none;
+        border: 0;
+        margin-right: 10px;
+        
+    }
+    input, textarea, button{
+        display: block;
+        font-family: 'Poppins', sans-serif;
+    }
+    textarea{
+        width: 100%;
+    }
+    form button{
+        width: 50%;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        outline: none;
+        border: 0;
+        background-color: #3a933a;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: auto;
+        transition: 1s;
+    }
+    form button:hover{
+        width: 100%;
+    }
+    form button:active{
+        background-color:#2a6b2a;
+    }
+    
+
+}
+
 
 
 
